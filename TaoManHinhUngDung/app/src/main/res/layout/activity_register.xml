@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="Form đăng ký"
+            android:textColor="#699BD9"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            app:srcCompat="@drawable/nhapmoi" />
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edt"
+            android:textColorHint="@color/white"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:hint="Họ và tên"
+            android:layout_marginTop="18dp"/>
+
+        <EditText
+            android:id="@+id/etRegEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:background="@drawable/custom_edt"
+            android:textColorHint="@color/white"
+            android:paddingLeft="10dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/etRegPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            android:background="@drawable/custom_edt"
+            android:textColorHint="@color/white"
+            android:paddingLeft="10dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/etRegPasswordConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Xác nhận mật khẩu"
+            android:background="@drawable/custom_edt"
+            android:textColorHint="@color/white"
+            android:paddingLeft="10dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/btnSubmitRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="18dp"
+            app:backgroundTint="@null"/>
+
+    </LinearLayout>
+</ScrollView>
